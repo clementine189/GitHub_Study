@@ -14,4 +14,4 @@ git push -u origin master
 ```
 
 - 查看项目是否提交成功
-- 后续就可以通过VSCode快速完成项目版本管理了
+- 后续就可以通过VSCode快速完成项目版本管理了 
