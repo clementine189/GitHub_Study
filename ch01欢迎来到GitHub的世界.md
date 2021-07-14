@@ -60,4 +60,20 @@ GitHub最大的特征是“面向人”
 
 - Wiki
 
+通过Wiki功能，任何人都能随时对一篇文章进行更改并保存，因此可以多人共同完成一篇文章。该功能常用在开发文档或手册的编写中。
+
+Wiki页也是作为Git仓库进行管理的，改版的历史纪录会被切实保存下来，使用者可以放心改写。
+
 - PullRequest
+
+开发者向GitHub的仓库推送更改或功能添加后，可以通过Pull Request功能向别人的仓库提出申请，请求对方合并。
+
+```shell
+#实验：实践一次pull request
+1.主账号：clementine189，有一个公开仓库learngit
+2.注册另一个账号：luotongwx，去主账号下fork了learngit仓库，稍作修改
+3.在luotongwx/learngit下做一些修改，然后发起一次PullRequest
+4.在clementine189/learngit中可以看到这次请求，接受合并请求
+
+```
+
