@@ -30,7 +30,7 @@ $git commit -m "Add hello"
 #查看提交日志
 $git log
 
-#执行push，GitHub上的仓库就会被更新，这是一种简写模式，不建议使用
+#执行push，GitHub上的仓库就会被更新，这是一种简写模式，不建议使用，详情请见ch04
 $git push
 ```
 
