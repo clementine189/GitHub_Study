@@ -24,6 +24,62 @@
   nothing to commit, working tree clean
   
   #结果显示我们当前正处于master分支下。接着还显示了没有可提交的内容。
+  
+  #touch ch05详细解说GitHub的功能.md
+  #git status
+  On branch master
+  Your branch is up to date with 'origin/master'.
+  
+  Changes not staged for commit:
+    (use "git add <file>..." to update what will be committed)
+    (use "git restore <file>..." to discard changes in working directory)
+          modified:   "ch04\351\200\232\350\277\207\345\256\236\351\231\205\346\223\215\344\275\234\345\255\246\344\271\240Git.md"
+  
+  Untracked files:
+    (use "git add <file>..." to include in what will be committed)
+          "ch05\350\257\246\347\273\206\350\247\243\350\257\264GitHub\347\232\204\345\212\237\350\203\275.md"
+  
+  no changes added to commit (use "git add" and/or "git commit -a")
+  
+  #可以看到在Untracked files中显示了ch05详细解说GitHub的功能.md文件
+  ```
+
+- git add --向暂存区中添加文件
+
+```shell
+#如果只是用Git仓库的工作树创建了文件，那么该文件并不会被计入Git仓库的版本管理对象当中。因此上面新创建的文件会被显示在Untracked #files中。要想让文件成为Git仓库的管理对象，就需要git add命令及那个其加入暂存区（Stage或者Index）中。
+#git add ch05详细解说GitHub的功能.md
+#git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   "ch05\350\257\246\347\273\206\350\247\243\350\257\264GitHub\347\232\204\345\212\237\350\203\275.md"
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+        modified:   "ch04\351\200\232\350\277\207\345\256\236\351\231\205\346\223\215\344\275\234\345\255\246\344\271\240Git.md"
+#可以看到该文件显示在Changes to be committed中了
+```
+
+- git commit -- 保存仓库中的历史记录
+
+  ```shell
+  #git commit命令可以将当前暂存区中的文件实际保存到仓库的历史记录中。通过这些记录，我们就可以在工作树中复原文件
+  
+  ##记录第一行提交信息
+  #git commit -m "first commit"
+  [master 27ed21c] first commit
+   1 file changed, 0 insertions(+), 0 deletions(-)
+   create mode 100644 "ch05\350\257\246\347\273\206\350\247\243\350\257\264GitHub\347\232\204\345\212\237\350\203\275.md"
+  #-m参数后的“first commit”称作提交信息，是对这个提交的概述
+  
+  ##记录详细提交信息
+  
+  
   ```
 
   
